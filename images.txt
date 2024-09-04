@@ -1,1 +1,1 @@
-1panel/openresty:1.21.4.3-3-2-focal
+docker.umami.is/umami-software/umami:mysql-latest
