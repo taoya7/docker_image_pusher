@@ -1,1 +1,2 @@
-docker.umami.is/umami-software/umami:mysql-latest
+ghcr.io/teableio/teable-db-migrate:latest
+ghcr.io/teableio/teable:latest
