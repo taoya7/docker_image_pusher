@@ -1,1 +1,2 @@
-q11391/pandora-helper
+postgres:16
+redis
