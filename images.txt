@@ -1,1 +1,6 @@
-ghcr.io/activepieces/activepieces:0.38.2
+ghcr.io/triggerdotdev/trigger.dev:v3
+postgres:16
+redis:7
+ghcr.io/triggerdotdev/provider/docker:v3
+ghcr.io/triggerdotdev/coordinator:v3
+electricsql/electric:latest
