@@ -1,2 +1,1 @@
-ghcr.io/teableio/teable:latest
-ghcr.io/teableio/teable-db-migrate:latest
+svhd/logto:1.24.0
