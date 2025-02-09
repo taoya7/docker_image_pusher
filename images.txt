@@ -1,3 +1,2 @@
-ghcr.io/triggerdotdev/trigger.dev:v3.3.10
-ghcr.io/triggerdotdev/provider/docker:v3.3.10
-ghcr.io/triggerdotdev/coordinator:v3.3.10
+ghcr.io/teableio/teable:latest
+ghcr.io/teableio/teable-db-migrate:latest
