@@ -1,1 +1,1 @@
-svhd/logto:1.24.0
+outlinewiki/outline:0.82.0
