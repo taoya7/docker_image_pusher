@@ -1,1 +1,1 @@
-outlinewiki/outline:0.82.0
+ghcr.io/activepieces/activepieces:0.42.0
