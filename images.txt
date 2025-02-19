@@ -1,2 +1,1 @@
-goodieshq/headscale-admin:0.24
-goodieshq/headscale-admin:0.25
+headscale/headscale:v0.25
