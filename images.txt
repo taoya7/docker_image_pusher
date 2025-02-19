@@ -1,2 +1,1 @@
-postgres:14.4
-redis:7.0.7
+headscale/headscale:0.23.0-alpha5
