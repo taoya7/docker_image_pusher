@@ -1,1 +1,1 @@
-javaow/tailscale-derp
+ghcr.io/activepieces/activepieces:0.44.0
