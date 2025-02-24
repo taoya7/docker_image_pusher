@@ -1,1 +1,1 @@
-ghcr.io/activepieces/activepieces:0.44.0
+sonatype/nexus3:3.77.1
