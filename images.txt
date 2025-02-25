@@ -1,1 +1,1 @@
-sonatype/nexus3:3.77.1
+javaow/tailscale-derp
