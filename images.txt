@@ -1,2 +1,1 @@
-minio/minio:RELEASE.2024-12-13T22-19-12Z
-minio/minio:RELEASE.2025-01-20T14-49-07Z
+tailscale/tailscale:stable
