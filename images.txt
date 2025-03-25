@@ -1,1 +1,1 @@
-boredazfcuk/icloudpd
+ghcr.io/toeverything/affine-graphql:0.20.5
