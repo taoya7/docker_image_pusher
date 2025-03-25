@@ -1,1 +1,1 @@
-ghcr.io/toeverything/affine-graphql:0.20.5
+ghcr.io/toeverything/affine-graphql:canary-dda3103
