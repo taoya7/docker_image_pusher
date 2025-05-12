@@ -1,1 +1,1 @@
-golangboyme/wxocr
+outlinewiki/outline:0.84.0
