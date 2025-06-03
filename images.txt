@@ -1,1 +1,1 @@
-louislam/uptime-kuma:latest
+n8nio/n8n
