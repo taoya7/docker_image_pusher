@@ -1,1 +1,1 @@
-ghcr.io/triggerdotdev/trigger.dev:v3.3.10@sha256:cda6ab7f81d2723a371709dba983334b2b2d75586e0713ae1c83403ab7cd1863
+louislam/uptime-kuma:latest
