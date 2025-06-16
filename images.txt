@@ -1,1 +1,1 @@
-xhofe/alist:v3.45.0
+verdaccio/verdaccio:6.1.3
