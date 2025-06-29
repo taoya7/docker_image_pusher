@@ -1,1 +1,1 @@
-icloudpd:1.28.1
+icloudpd/icloudpd:1.28.1
