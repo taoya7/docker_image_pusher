@@ -181,10 +181,7 @@ jobs:
             echo "docker tag $image $new_image"
             docker tag $image $new_image
             echo "docker push $new_image"
-            docker push $new_image
-            
-            # 推送成功后发送飞书通知
-            if [ $? -eq 0 ]; then
+            if docker push $new_image; then
                 echo "镜像推送成功，发送飞书通知"
                 send_feishu_notification "$image" "$new_image"
             else
