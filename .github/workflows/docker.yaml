@@ -11,6 +11,9 @@ env:
   ALIYUN_NAME_SPACE: "${{ secrets.ALIYUN_NAME_SPACE }}"
   ALIYUN_REGISTRY_USER: "${{ secrets.ALIYUN_REGISTRY_USER }}"
   ALIYUN_REGISTRY_PASSWORD: "${{ secrets.ALIYUN_REGISTRY_PASSWORD }}"
+  FEISHU_WEBHOOK_URL: "${{ secrets.FEISHU_WEBHOOK_URL }}"
+  FEISHU_TEMPLATE_ID: "${{ secrets.FEISHU_TEMPLATE_ID }}"
+  FEISHU_TEMPLATE_VERSION: "${{ secrets.FEISHU_TEMPLATE_VERSION }}"
 
 jobs:
 
@@ -58,6 +61,42 @@ jobs:
     - name: Build and push image Aliyun
       run: |
         docker login -u $ALIYUN_REGISTRY_USER -p $ALIYUN_REGISTRY_PASSWORD $ALIYUN_REGISTRY
+        
+        # 飞书推送函数
+        send_feishu_notification() {
+            local before_image="$1"
+            local after_image="$2"
+            local current_time=$(date '+%Y-%m-%d %H:%M:%S')
+            
+            if [[ -n "$FEISHU_WEBHOOK_URL" && -n "$FEISHU_TEMPLATE_ID" ]]; then
+                echo "发送飞书通知..."
+                curl -X POST -H "Content-Type: application/json" \
+                  -d "{
+                    \"msg_type\": \"interactive\",
+                    \"card\": {
+                      \"type\": \"template\",
+                      \"data\": {
+                        \"template_id\": \"$FEISHU_TEMPLATE_ID\",
+                        \"template_version_name\": \"${FEISHU_TEMPLATE_VERSION:-1.0.1}\",
+                        \"template_variable\": {
+                          \"before\": \"$before_image\",
+                          \"after\": \"$after_image\",
+                          \"date\": \"$current_time\"
+                        }
+                      }
+                    }
+                  }" \
+                  "$FEISHU_WEBHOOK_URL"
+                
+                if [ $? -eq 0 ]; then
+                    echo "飞书通知发送成功: $before_image -> $after_image"
+                else
+                    echo "飞书通知发送失败"
+                fi
+            else
+                echo "飞书配置未设置，跳过通知"
+            fi
+        }
         # 数据预处理,判断镜像是否重名
         declare -A duplicate_images
         declare -A temp_map
@@ -143,6 +182,15 @@ jobs:
             docker tag $image $new_image
             echo "docker push $new_image"
             docker push $new_image
+            
+            # 推送成功后发送飞书通知
+            if [ $? -eq 0 ]; then
+                echo "镜像推送成功，发送飞书通知"
+                send_feishu_notification "$image" "$new_image"
+            else
+                echo "镜像推送失败，跳过飞书通知"
+            fi
+            
             echo "开始清理磁盘空间"
             echo "=============================================================================="
             df -hT
