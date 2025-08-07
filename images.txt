@@ -1,1 +1,1 @@
-outlinewiki/outline:0.86.0
+neosmemo/memos:0.25.0
