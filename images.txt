@@ -1,1 +1,1 @@
-neosmemo/memos:0.25.0
+ghcr.io/drizzle-team/gateway:latest
