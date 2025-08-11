@@ -1,1 +1,1 @@
-ghcr.io/drizzle-team/gateway:latest
+ghcr.io/umami-software/umami:mysql-v2.19.0
