@@ -1,1 +1,1 @@
-ghcr.io/umami-software/umami:mysql-v2.19.0
+svhd/logto:1.30.1
