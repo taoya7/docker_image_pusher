@@ -1,6 +1,1 @@
-ghcr.io/triggerdotdev/trigger.dev:v4.0.0
-ghcr.io/triggerdotdev/coordinator:v4.0.0
-ghcr.io/triggerdotdev/provider/docker:v4.0.0
-ghcr.io/triggerdotdev/supervisor:v4.0.0
-ghcr.io/triggerdotdev/charts/trigger:4.0.0
-ghcr.io/triggerdotdev/provider/kubernetes:v4.0.0
+outlinewiki/outline:0.87
