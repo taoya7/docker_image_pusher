@@ -1,1 +1,1 @@
-outlinewiki/outline:0.87
+weishaw/claude-relay-service:latest
