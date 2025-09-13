@@ -1,2 +1,2 @@
 weishaw/claude-relay-service:latest
-docker pull xhofe/alist:v3.53.0-aio
+xhofe/alist:v3.53.0-aio
