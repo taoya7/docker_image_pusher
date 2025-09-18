@@ -1,2 +1,1 @@
-weishaw/claude-relay-service:latest
-xhofe/alist:v3.53.0-aio
+outlinewiki/outline:0.87.4
