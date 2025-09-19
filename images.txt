@@ -1,1 +1,1 @@
-outlinewiki/outline:0.87.4
+ghcr.io/browserless/chromium:v2.35.0
