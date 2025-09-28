@@ -1,1 +1,1 @@
-enwaiax/x-ui:alpha-zh
+javaow/tailscale-derp
