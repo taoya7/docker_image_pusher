@@ -1,1 +1,1 @@
-outlinewiki/outline:1.0
+ghcr.io/nickrunning/wechat-selkies:sha256-5d254f66ca1897f1b52319993dd2d7d7c31e56f6727144b4d9776c1c7033af56
