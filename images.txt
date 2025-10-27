@@ -1,1 +1,1 @@
-docker pull outlinewiki/outline:1.0
+outlinewiki/outline:1.0
