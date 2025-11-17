@@ -1,1 +1,1 @@
-svhd/logto:1.33.0
+ghcr.io/drizzle-team/gateway:1.1.1
