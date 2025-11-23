@@ -1,1 +1,1 @@
-commitgo/gitea-ee:24.6.0
+zimengxiong/excalidash-backend:latest
