@@ -1,1 +1,1 @@
-zimengxiong/excalidash-backend:latest
+outlinewiki/outline:1.1.0
