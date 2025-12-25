@@ -1,1 +1,1 @@
-rostislavdugin/postgresus:latest
+usesend/smtp-proxy:latest
