@@ -1,1 +1,1 @@
-usesend/smtp-proxy:latest
+usesend/smtp-proxy:v1.7.9
