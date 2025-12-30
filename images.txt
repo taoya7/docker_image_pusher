@@ -1,1 +1,1 @@
-docker pull svhd/logto:1.35
+svhd/logto:1.35
