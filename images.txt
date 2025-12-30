@@ -1,1 +1,1 @@
-usesend/smtp-proxy:v1.7.9
+docker pull svhd/logto:1.35
