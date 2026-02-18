@@ -1,1 +1,1 @@
-bitnamilegacy/clickhouse
+outlinewiki/outline:1.5
