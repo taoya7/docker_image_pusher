@@ -1,1 +1,1 @@
-cloakhq/cloakbrowser:0.3.31
+verdaccio/verdaccio:6.7
