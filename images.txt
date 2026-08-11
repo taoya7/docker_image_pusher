@@ -1,1 +1,1 @@
-verdaccio/verdaccio:6.7
+rustfs/rustfs:1.0.0-beta.12
