@@ -1,1 +1,1 @@
-rustfs/rustfs:1.0.0-beta.12
+emqx/emqx:6.2.2
